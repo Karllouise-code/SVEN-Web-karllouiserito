@@ -39,8 +39,8 @@ Follow these steps to set up the application locally:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/SVEN-Web-yourfirstnamelastname.git
-cd SVEN-Web-yourfirstnamelastname
+git clone https://github.com/Karllouise-code/SVEN-Web-karllouiserito.git
+cd SVEN-Web-karllouiserito
 ```
 
 ### 2. Install Dependencies
@@ -137,7 +137,7 @@ Open your browser and navigate to: `http://localhost:8000` (or the port shown by
 ├── app/
 │   ├── GraphQL/           # GraphQL resolvers and types
 │   ├── Models/            # Eloquent models
-│   └── Http/Controllers/  # Laravel controllers
+│
 ├── database/
 │   └── migrations/        # Database migrations
 ├── resources/
@@ -148,51 +148,6 @@ Open your browser and navigate to: `http://localhost:8000` (or the port shown by
 │   └── web.php           # Web routes
 └── public/               # Public assets
 ```
-
-## 🚨 Troubleshooting
-
-### Common Issues:
-
-1. **Database Connection Error**
-   - Ensure MySQL is running
-   - Verify database credentials in `.env`
-   - Check if database exists
-
-2. **Composer/NPM Dependencies**
-   - Run `composer install` if vendor folder is missing
-   - Run `npm install` if node_modules folder is missing
-
-3. **Application Key Missing**
-   - Run `php artisan key:generate`
-
-4. **Permission Issues**
-   - Ensure proper file permissions for storage and bootstrap/cache directories
-
-## 🔄 Development Workflow
-
-1. Make changes to your code
-2. Test functionality locally
-3. Commit changes with descriptive messages
-4. Push to your repository
-
-## 📝 Notes
-
-- The application uses GraphQL for efficient data fetching
-- Vue.js components handle the frontend interactions
-- Laravel handles backend logic and database operations
-- Responsive design adapts to both desktop and mobile devices
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ---
 
