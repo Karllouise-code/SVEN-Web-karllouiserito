@@ -133,7 +133,12 @@
                     align-items: center;
                     justify-content: center;
 
-                    @media (max-width: 768px) {
+                    @media (max-width: 968px) {
+                        margin: 0 auto;
+                    }
+
+                    // if greater than 1800px
+                    @media (min-width: 1800px) {
                         margin: 0 auto;
                     }
                 }
@@ -160,8 +165,22 @@
                 display: flex;
                 justify-content: center;
 
+                @media (max-width: 768px) {
+                    padding: 2rem 4rem;
+                }
+
+                .inner-container {
+                    margin-right: 10rem !important;
+                    @media (max-width: 768px) {
+                        margin: 0 auto !important;
+                    }
+
+                    @media (min-width: 1800px) {
+                        max-width: 900px;
+                    }
+                }
+
                 h1 {
-                    // font-size: 2rem;
                     font-weight: bold;
                     color: $secondary_color;
                 }

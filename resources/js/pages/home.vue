@@ -56,7 +56,7 @@
 
         <section class="contact" id="schedule">
             <div class="row no-gutters align-items-stretch">
-                <div class="col-md-5 contact-left flex-column">
+                <div class="col-lg-5 contact-left flex-column">
                     <div class="mt-5" style="margin-left: 5rem">
                         <a class="navbar-brand d-flex mb-0 align-items-center" href="#">
                             <span class="paw_container border">
@@ -78,8 +78,8 @@
                         <img src="/public/assets/images/puppy_run.png" alt="" />
                     </div>
                 </div>
-                <div class="col-md-7 contact-right">
-                    <div class="m-5" style="margin-right: 10rem !important">
+                <div class="col-lg-7 contact-right">
+                    <div class="m-5 inner-container">
                         <h1 class="display-5">We'll take your dog for a walk. Just tell us when!</h1>
 
                         <form @submit.prevent="onSubmit" class="mt-5 frequency-form">
@@ -282,6 +282,8 @@ export default {
         },
 
         onRedirectForm() {
+            window.location.hash = "";
+
             window.location.hash = "#schedule";
         },
     },
