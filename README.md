@@ -19,7 +19,7 @@ A modern web application for booking pet grooming appointments, built with Larav
 - **API**: GraphQL (Rebing GraphQL)
 - **Database**: MySQL
 - **HTTP Client**: Axios
-- **Styling**: CSS3 with Open Sans font
+- **Styling**: SCSS (Sass)
 - **Version Control**: Git
 
 ## 📋 Requirements
