@@ -1,0 +1,33 @@
+.header-transparent {
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: background 0.4s;
+}
+.bg-white {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: background 0.4s;
+}
+.navbar {
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    margin-top: 3rem;
+
+    &-nav {
+        width: 500px;
+    }
+
+    &-brand {
+        h3 {
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+}
+.hero-section {
+    padding-top: 80px;
+}

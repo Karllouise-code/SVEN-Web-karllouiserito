@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->enum('frequency', ['recurring', 'one_time'])->default('one_time');
             $table->date('start_date');
-            $table->text('days')->nullable(); // Stores array of selected days, e.g., ["Monday", "Wednesday"]
-            $table->text('times')->nullable(); // Stores array of selected times, e.g., ["Morning", "Afternoon"]
+            $table->text('days')->nullable();
+            $table->text('times')->nullable();
             $table->text('notes')->nullable();
             $table->timestamps();
         });

@@ -78,7 +78,7 @@ return [
                 // ExampleQuery::class,
             ],
             'mutation' => [
-                // ExampleMutation::class,
+                'front' => App\GraphQL\Mutations\FrontMutation::class,
             ],
             // The types only available in this schema
             'types' => [
@@ -106,9 +106,10 @@ return [
     // ]
     //
     'types' => [
-        // ExampleType::class,
-        // ExampleRelationType::class,
-        // \Rebing\GraphQL\Support\UploadType::class,
+        'response_type' => App\GraphQL\Types\ResponseType::class,
+
+
+        'front_input' => App\GraphQL\Inputs\FrontInput::class,
     ],
 
     // This callable will be passed the Error object for each errors GraphQL catch.

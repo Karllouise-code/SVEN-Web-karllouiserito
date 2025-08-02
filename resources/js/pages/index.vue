@@ -1,7 +1,6 @@
 <template>
     <web-header />
 
-    <!-- Contents -->
     <main>
         <router-view />
     </main>
@@ -17,7 +16,7 @@ import { useHead } from "@vueuse/head";
 export default {
     setup() {
         useHead({
-            title: "Test App",
+            title: "Pawtastic",
         });
     },
 

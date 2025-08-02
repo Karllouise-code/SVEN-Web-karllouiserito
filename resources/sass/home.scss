@@ -1,0 +1,269 @@
+.pet_booking {
+    &.homepage {
+        overflow-x: hidden;
+        .hero {
+            &-section {
+                position: relative;
+                width: 100vw;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+            }
+
+            &-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: linear-gradient(rgba(84, 88, 113, 0.7), rgba(84, 88, 113, 0.8)), url("/public/assets/images/dog_background.jpg") center center/cover no-repeat;
+                z-index: 1;
+            }
+
+            &-content {
+                position: relative;
+                z-index: 2;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                h1 {
+                    font-weight: bold;
+                    font-size: 4rem;
+
+                    @media (max-width: 768px) {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+
+            &-text-container {
+                max-width: 500px;
+            }
+        }
+
+        .about {
+            padding: 4rem;
+            background-color: #f8f9fa;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: bold;
+                color: $secondary_color;
+            }
+
+            p {
+                font-size: 1.25rem;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+                margin-right: 8rem;
+            }
+
+            button {
+                margin-top: 1rem;
+            }
+
+            .portrait-img {
+                position: relative;
+                width: 100%;
+                height: 250px;
+                border-radius: 0.5rem;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .portrait-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0.5rem;
+                display: block;
+            }
+            .portrait-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 0.5rem;
+                // background: linear-gradient(rgba(10, 30, 80, 0.5), rgba(10, 30, 80, 0.5));
+                background: linear-gradient(rgba(84, 88, 113, 0.5), rgba(84, 88, 113, 0.5));
+                pointer-events: none;
+            }
+        }
+
+        .contact {
+            .row {
+                margin: 0;
+                display: flex;
+                overflow: hidden; /* Ensures border radius clips inner background colors */
+                // min-height: 300px;
+            }
+
+            &-left {
+                background: $secondary_color;
+                padding: 2rem 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+
+                ul li {
+                    color: #fff;
+                    list-style: disc !important;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+
+                .puppy-img-gradient {
+                    position: relative;
+                    width: 100%;
+                    max-width: 420px;
+                    margin: 0rem auto 0 0;
+                    border-radius: 1rem;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media (max-width: 768px) {
+                        margin: 0 auto;
+                    }
+                }
+                .puppy-img-gradient img {
+                    width: 100%;
+                    display: block;
+                }
+                .puppy-img-gradient::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 1rem;
+                    background: linear-gradient(rgba(84, 88, 113, 0.5), rgba(84, 88, 113, 0.5));
+                    pointer-events: none;
+                }
+            }
+
+            &-right {
+                background: #e0e0e0;
+                padding: 2rem 1rem;
+                display: flex;
+                justify-content: center;
+
+                h1 {
+                    // font-size: 2rem;
+                    font-weight: bold;
+                    color: $secondary_color;
+                }
+
+                label {
+                    color: $secondary_color;
+                    font-size: 1.2rem;
+                }
+
+                .frequency-wrapper {
+                    background-color: white;
+                    padding: 0.5rem;
+                    display: inline-block; /* shrink to fit content */
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* subtle shadow */
+                    border-radius: 0.375rem;
+                }
+
+                .frequency-wrapper .btn-group {
+                    gap: 0.5rem;
+                    display: flex;
+                }
+
+                .frequency-btn {
+                    background-color: transparent;
+                    color: $secondary_color;
+                    border: none;
+                    padding: 0.2rem 1.25rem;
+                    border-radius: 0.375rem;
+                    transition: background-color 0.2s ease, color 0.2s ease;
+                }
+
+                .days-wrapper {
+                    background-color: white;
+                    padding: 0.5rem;
+                    display: inline-block;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+                }
+
+                .days-group {
+                    // gap: 0.5rem;
+                    display: flex;
+                    flex-wrap: wrap; /* Wraps on small screens */
+                }
+
+                .day-btn {
+                    // background-color: transparent;
+                    border: 1px solid #ccc;
+                    background-color: #fff;
+                    color: $secondary_color;
+                    padding: 0.5rem 1rem;
+                    transition: background-color 0.2s ease, color 0.2s ease;
+
+                    // border radius only for the first and last button
+                    &:first-child {
+                        border-top-left-radius: 0.375rem;
+                        border-bottom-left-radius: 0.375rem;
+                    }
+                    &:last-child {
+                        border-top-right-radius: 0.375rem;
+                        border-bottom-right-radius: 0.375rem;
+                    }
+                }
+
+                .times-wrapper {
+                    background-color: #fff;
+                    padding: 0.5rem;
+                    display: inline-block;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+                }
+
+                .times-group {
+                    // gap: 0.5rem;
+                    display: flex;
+                    flex-wrap: wrap; /* Wraps on small screens */
+                }
+                .times-btn {
+                    border: 1px solid #ccc;
+                    background-color: #fff;
+
+                    color: $secondary_color;
+                    padding: 0.5rem 1rem;
+                    transition: background-color 0.2s ease, color 0.2s ease;
+
+                    // border radius only for the first and last button
+                    &:first-child {
+                        border-top-left-radius: 0.375rem;
+                        border-bottom-left-radius: 0.375rem;
+                    }
+                    &:last-child {
+                        border-top-right-radius: 0.375rem;
+                        border-bottom-right-radius: 0.375rem;
+                    }
+                }
+
+                /* Checked (active) state */
+                .btn-check:checked + .frequency-btn,
+                .btn-check:checked + .day-btn,
+                .btn-check:checked + .times-btn {
+                    background-color: #ebd0ce;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
