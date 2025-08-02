@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import { createRouter, createWebHistory, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import { createHead } from "@vueuse/head";
 import App from "./App.vue";
 import routes from "./routes.js";
@@ -18,7 +18,6 @@ const head = createHead();
 const app = createApp(App);
 
 app.config.globalProperties.$query = query;
-// app.config.globalProperties.$swal = Swal;
 
 app.use(VueSweetalert2);
 app.use(head);
