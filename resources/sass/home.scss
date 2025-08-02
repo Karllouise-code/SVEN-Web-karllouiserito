@@ -57,6 +57,10 @@
                 font-size: 3rem;
                 font-weight: bold;
                 color: $secondary_color;
+
+                @media (max-width: 768px) {
+                    font-size: 2rem;
+                }
             }
 
             p {
@@ -66,6 +70,7 @@
                 margin-right: 8rem;
 
                 @media (max-width: 768px) {
+                    font-size: 1rem;
                     margin-right: 0;
                 }
             }
