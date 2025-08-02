@@ -23,7 +23,7 @@
                         <button @click="onRedirectForm" class="btn btn-lg btn-primary secondary" type="button" style="margin-top: 2rem">Schedule a visit</button>
                     </div>
                     <div class="col-md-6">
-                        <div class="row g-3 ms-4 mt-md-0 mt-4">
+                        <div class="row g-3 ms-md-4 ms-0 mt-md-0 mt-4">
                             <div class="col-md-6">
                                 <div class="portrait-img">
                                     <img src="/public/assets/images/portrait_cat.jpg" alt="cat" class="img-fluid rounded w-100" />
@@ -57,7 +57,7 @@
         <section class="contact" id="schedule">
             <div class="row no-gutters align-items-stretch">
                 <div class="col-lg-5 contact-left flex-column">
-                    <div class="mt-5" style="margin-left: 5rem">
+                    <div class="mt-5 inner-container">
                         <a class="navbar-brand d-flex mb-0 align-items-center" href="#">
                             <span class="paw_container border">
                                 <img class="img-fluid paw_logo" src="/public/assets/images/paw_logo.png" alt="Logo" />
